@@ -83,3 +83,9 @@ a{
     border:1px solid #bb2124;
     width:250px;
 }
+
+@media(max-width:768px){
+    .login .left{
+        display: none;
+    }
+}
