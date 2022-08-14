@@ -24,6 +24,7 @@ faBarIcon.addEventListener('click',()=>{
         sidebar.classList.remove('activeFaBar');
         sidebar.style.transition = '0.3s all ease';
         bodyContent.classList.remove('bodyContLeft')
+        bodyContent.style.transition = '0.3s all ease';
     }else{
         sidebar.classList.add('activeFaBar');
         bodyContent.classList.add('bodyContLeft')

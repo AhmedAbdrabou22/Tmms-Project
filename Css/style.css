@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: rgb(219, 226, 226);
+    background-color: #FAFAFA;
 }
 
 .row {
@@ -159,11 +159,23 @@ div.content {
 }
 .bodyContLeft{
     margin-left:205px;
+    transition: 0.3s all ease;
+    -webkit-transition: 0.3s all ease;
+    -moz-transition: 0.3s all ease;
+    -ms-transition: 0.3s all ease;
+    -o-transition: 0.3s all ease;
 }
 
-
-
-
+/**Styl;e  */
+.tabsAndNav{
+    background-color: #aeabab;
+}
+.nav-link{
+    color:black;
+}
+.nav-link:hover{
+    color: black !important;
+}
 
 
 @media screen and(max-width:768px) {
