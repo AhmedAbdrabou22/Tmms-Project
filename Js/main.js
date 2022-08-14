@@ -18,11 +18,14 @@ inputs.forEach(input =>{
 
 let faBarIcon = document.querySelector('.fa-bars');
 let sidebar = document.querySelector('.sidebar');
+let bodyContent = document.querySelector('.bodyContent');
 faBarIcon.addEventListener('click',()=>{
     if(sidebar.classList.contains('activeFaBar')){
         sidebar.classList.remove('activeFaBar');
-        sidebar.style.transition = '0.3s all ease'
+        sidebar.style.transition = '0.3s all ease';
+        bodyContent.classList.remove('bodyContLeft')
     }else{
         sidebar.classList.add('activeFaBar');
+        bodyContent.classList.add('bodyContLeft')
     }
 })
