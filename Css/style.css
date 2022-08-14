@@ -84,8 +84,22 @@ a{
     width:250px;
 }
 
+/**Style index 3 Page */
+input[type='search']{
+    width:350px;
+}
+/**End of style indexx 3 Page  */
+
+
+
+
+
+
 @media(max-width:768px){
     .login .left{
         display: none;
+    }
+    input[type='search']{
+        width:100%;
     }
 }
