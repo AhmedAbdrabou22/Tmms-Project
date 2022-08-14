@@ -13,3 +13,16 @@ inputs.forEach(input =>{
         input.style.color = 'black';
     })
 })
+
+
+
+let faBarIcon = document.querySelector('.fa-bars');
+let sidebar = document.querySelector('.sidebar');
+faBarIcon.addEventListener('click',()=>{
+    if(sidebar.classList.contains('activeFaBar')){
+        sidebar.classList.remove('activeFaBar');
+        sidebar.style.transition = '0.3s all ease'
+    }else{
+        sidebar.classList.add('activeFaBar');
+    }
+})

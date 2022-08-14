@@ -1,62 +1,77 @@
-*{
+* {
     margin: 0;
-    padding:0;
+    padding: 0;
     box-sizing: border-box;
 }
-body{
-    background-color: rgb(219,226,226);
-}
-.row{
-    background-color: white;
-}
-h2{
-    font :normal normal bold 30px/40px;
-}
-.login{
-    margin:auto;
+
+body {
+    background-color: rgb(219, 226, 226);
 }
 
-.login .right .all{
-    padding:20px;
-    width:95%;
+.row {
+    background-color: white;
 }
-.login .cont{
+
+h2 {
+    font: normal normal bold 30px/40px;
+}
+
+.login {
+    margin: auto;
+}
+
+.login .right .all {
+    padding: 20px;
+    width: 95%;
+}
+
+.login .cont {
     height: 100vh;
 }
-.login .right img{
-    width:20%;
+
+.login .right img {
+    width: 20%;
 }
-label{
-    margin:5px;
+
+label {
+    margin: 5px;
 }
-.login .right .form-group{
-    margin:4px;
+
+.login .right .form-group {
+    margin: 4px;
 }
-.login .right , .login .left{
+
+.login .right,
+.login .left {
     min-height: 100vh;
 }
-.login .left img{
+
+.login .left img {
     min-height: 100vh;
 }
-.login .right .btn{
-    width:50%;
+
+.login .right .btn {
+    width: 50%;
     display: block;
-    margin:10px auto;
+    margin: 10px auto;
 }
-.login form input{
+
+.login form input {
     background-color: #666666;
     opacity: 0.08;
-    padding:13px 8px;
+    padding: 13px 8px;
 }
-.login form button{
-    border-radius:10px;
-    -webkit-border-radius:10px;
-    -moz-border-radius:10px;
-    -ms-border-radius:10px;
-    -o-border-radius:10px;
+
+.login form button {
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
     font-weight: bolder;
 }
-.login form button:last-child:hover{
+
+.login form button:last-child:hover {
     opacity: 0.8;
     transition: 0.2s all ease-in;
     -webkit-transition: 0.2s all ease-in;
@@ -64,42 +79,116 @@ label{
     -ms-transition: 0.2s all ease-in;
     -o-transition: 0.2s all ease-in;
 }
-p{
+
+p {
     text-align: center;
 }
-a{
-    color:black;
+
+a {
+    color: black;
     text-decoration: none;
 }
 
-.ss{
-    color:red;
+.ss {
+    color: red;
     font-weight: bolder;
-    margin-top:3px;
-    padding:5px;
+    margin-top: 3px;
+    padding: 5px;
     align-self: center;
 }
-.ss > div {
-    border:1px solid #bb2124;
-    width:250px;
+
+.ss>div {
+    border: 1px solid #bb2124;
+    width: 250px;
 }
 
 /**Style index 3 Page */
-input[type='search']{
-    width:350px;
+input[type='search'] {
+    width: 350px;
 }
+
 /**End of style indexx 3 Page  */
+.navbar{
+    z-index: 1;
+}
+.sidebar {
+    margin: 0;
+    padding: 0;
+    width: 150px;
+    background-color: #f1f1f1;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+    z-index: 1;
+    transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    -o-transform: translateX(-100%);
+}
+
+.sidebar a {
+    display: block;
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+}
+
+.sidebar a.active {
+    background-color: #04AA6D;
+    color: white;
+}
+
+.sidebar a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+}
+
+div.content {
+    margin-left: 200px;
+    padding: 1px 16px;
+    height: 1000px;
+}
+.activeFaBar{
+    transform: translateY(0%);
+    transition: 0.3s all ease;
+    -webkit-transition: 0.3s all ease;
+    -moz-transition: 0.3s all ease;
+    -ms-transition: 0.3s all ease;
+    -o-transition: 0.3s all ease;
+}
 
 
 
 
 
 
-@media(max-width:768px){
-    .login .left{
+
+@media screen and(max-width:768px) {
+    .login .left {
         display: none;
     }
-    input[type='search']{
-        width:100%;
+
+    input[type='search'] {
+        width: 100%;
+    }
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    .sidebar a {
+        float: left;
+    }
+
+    div.content {
+        margin-left: 0;
+    }
+}
+@media screen and (max-width: 400px) {
+    .sidebar a {
+        text-align: center;
+        float: none;
     }
 }
