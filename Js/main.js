@@ -29,3 +29,14 @@ faBarIcon.addEventListener('click',()=>{
         bodyContent.classList.add('bodyContLeft')
     }
 })
+
+let sidebaraAnchor = document.querySelectorAll('.sidebar a');
+sidebaraAnchor.forEach((sidebara)=>{
+    sidebara.addEventListener('click',()=>{
+        sidebaraAnchor.forEach((ele)=>{
+            ele.classList.remove('active')
+        })
+        sidebara.classList.add('active')
+    })
+
+})

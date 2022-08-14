@@ -108,13 +108,10 @@ input[type='search'] {
 }
 
 /**End of style indexx 3 Page  */
-.navbar{
-    z-index: 1;
-}
 .sidebar {
     margin: 0;
-    padding: 0;
-    width: 120px;
+    padding: 10px;
+    width:200px;
     background-color: #f1f1f1;
     position: fixed;
     height: 100%;
@@ -130,19 +127,22 @@ input[type='search'] {
 .sidebar a {
     display: block;
     color: black;
-    padding: 16px;
+    padding:10px;
     text-decoration: none;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    margin-bottom:3px;
 }
 
 .sidebar a.active {
-    background-color: #04AA6D;
+    background: linear-gradient(270deg, #5C3D2E 0%, #b85c38 100%) 0% 0% no-repeat padding-box;
     color: white;
 }
 
-.sidebar a:hover:not(.active) {
-    background-color: #555;
-    color: white;
-}
+
 
 div.content {
     margin-left: 200px;
@@ -158,7 +158,7 @@ div.content {
     -o-transition: 0.3s all ease;
 }
 .bodyContLeft{
-    margin-left:140px;
+    margin-left:205px;
 }
 
 
