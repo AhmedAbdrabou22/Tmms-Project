@@ -23,11 +23,12 @@ faBarIcon.addEventListener('click',()=>{
     if(sidebar.classList.contains('activeFaBar')){
         sidebar.classList.remove('activeFaBar');
         sidebar.style.transition = '0.3s all ease';
-        bodyContent.classList.remove('bodyContLeft')
+        bodyContent.classList.remove('body')
         bodyContent.style.transition = '0.3s all ease';
     }else{
         sidebar.classList.add('activeFaBar');
-        bodyContent.classList.add('bodyContLeft')
+        bodyContent.classList.add('body')
+        bodyContent.style.transition = '0.3s all ease';
     }
 })
 
