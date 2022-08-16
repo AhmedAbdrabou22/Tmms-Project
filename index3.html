@@ -19,7 +19,7 @@
 
 <body>
 
-    
+
     <!--Start Side Bars-->
     <div class="sidebar">
         <a class="active" href="#home">AdvertiseMent</a>
@@ -39,32 +39,32 @@
     <!--End Side Bars-->
 
     <section class="bodyContent">
-            <!--Start Nav Bar-->
-    <nav class="navbar navbar-light bg-light navbar-expand-md sticky-top">
-        <div class="container-fluid">
-            <a class="navbar-brand"><i class="fa-solid fa-bars"></i></a>
-            <form class="d-flex">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            </form>
-            <div class="d-flex justify-content-between align-items-center px-2 py-1">
-                <i class="fa-solid fa-bell"></i>
-                <img src="images/profile.png" alt="Profile" class="img-fluid w-25">
-                <span>XHospital</span>
-                <!-- <i class="fa-solid fa-chevron-down"></i> -->
-                <div class="dropdown">
-                    <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
-                        aria-expanded="false">
-                    </button>
-                    <ul class="dropdown-menu dropdown-menu-end mt-2" aria-labelledby="dropdownMenuButton1">
-                        <li><a class="dropdown-item" href="index.html">Sign In</a></li>
-                        <li><a class="dropdown-item" href="index2.html">Sign Up</a></li>
-                    </ul>
+        <!--Start Nav Bar-->
+        <nav class="navbar navbar-light bg-light navbar-expand-md sticky-top">
+            <div class="container-fluid contentNav d-flex justify-content-around align-items-center">
+                <a class="navbar-brand"><i class="fa-solid fa-bars"></i></a>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" id="search">
+                </form>
+                <div class="d-flex justify-content-between align-items-center px-2 py-1">
+                    <i class="fa-solid fa-bell"></i>
+                    <img src="images/profile.png" alt="Profile" class="img-fluid w-25">
+                    <span>XHospital</span>
+                    <!-- <i class="fa-solid fa-chevron-down"></i> -->
+                    <div class="dropdown">
+                        <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-end mt-2" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" href="index.html">Sign In</a></li>
+                            <li><a class="dropdown-item" href="index2.html">Sign Up</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-        </div>
-    </nav>
+        </nav>
 
-    <!--End of NavBar-->
+        <!--End of NavBar-->
         <div class="tabsAndNav">
             <nav class="nav nav-tabs">
                 <button type="button" class="nav-link active" data-bs-toggle="tab" data-bs-target="#tab-all"><i
@@ -78,7 +78,7 @@
                 <div class="tab-pane active show fade" id="tab-all">
                     <!--Content All Advertisment Tables-->
                     <div class="row">
-                        <div class="col-2 bg-primary p-3">
+                        <div class="col-lg-2 col-md-6 col-sm-12 p-3 shadow">
                             <form action="">
                                 <div>
                                     <select name="select" id="select">
@@ -110,16 +110,19 @@
                                         <option value="1">Ad Refrence number
                                         </option>
                                     </select>
-                                </div>                                <div>
+                                </div>
+                                <div>
                                     <select name="select">
                                         <option value="1">Ad Refrence number
                                         </option>
                                     </select>
-                                </div>                                <div>
+                                </div>
+                                <div>
                                     <select name="select">
                                         <option value="1">Ad Refrence number
                                         </option>
                                     </select>
+                                    <br>
                                     <span>Choose Ads Date</span>
                                 </div>
                                 <div class="d-flex justify-content-between date">
@@ -132,31 +135,9 @@
                                 </div>
                             </form>
                         </div>
-                        <div class="col-10 px-4">
-                            <table>
-                                <tr>
-                                    <th>Name</th>
-                                    <th>Name</th>
-                                    <th>Name</th>
-                                    <th>Name</th>
-                                    <th>Name</th>
-                                    <th>Name</th>
-                                    <th>Name</th>
-                                    <th>Name</th>
-                                    <th>Name</th>
-                                </tr>
-                                <tr>
-                                    <td>Ahmed</td>
-                                    <td>Ahmed</td>
-                                    <td>Ahmed</td>
-                                    <td>Ahmed</td>
-                                    <td>Ahmed</td>
-                                    <td>Ahmed</td>
-                                    <td>Ahmed</td>
-                                    <td>Ahmed</td>
-                                    <td>Ahmed</td>
-                                </tr>
-                            </table>
+                        <div class="col-lg-10 col-md-6 col-sm-12 px-4">
+                            <!--Content of Table-->
+                            <!--Content of Table-->
                         </div>
                     </div>
                     <!--Content All Advertisment Tables-->

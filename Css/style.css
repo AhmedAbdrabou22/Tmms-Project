@@ -5,11 +5,10 @@
 }
 
 body {
-    background-color: #FAFAFA;
     overflow-x: hidden;
 }
 .row {
-    background-color: white;
+    background-color: #FAFAFA;
 }
 
 h2 {
@@ -169,6 +168,7 @@ div.content {
 }
 
 /**Style bodyContent Section  */
+
 .tabsAndNav nav {
     background-color: #aeabab;
 }
@@ -187,6 +187,7 @@ div.content {
 }
 
 /* tab content */
+
 .tab-content .tab-pane select , .tab-content .tab-pane .date input{
     padding:10px;
     background-color:#FAFAFA;
@@ -206,33 +207,42 @@ div.content {
 /* Style bodyContent Section*/
 
 
-@media screen and(max-width:768px) {
-    .login .left {
-        display: none;
+@media (max-width:768px) {
+    #search{
+        width:100%;
+    }
+    .bodyContent .contentNav{
+        flex-direction: column;
+    }
+    .sidebar{
+        width:130px;
+        font-size: 13px;
     }
 
-    input[type='search'] {
-        width: 100%;
+    .body{
+        padding-left:130px;
     }
-
-    .sidebar {
-        width: 100%;
-        height: auto;
-        position: relative;
+    .nav-tabs button{
+        font-size:13px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column;
+        width:30%;
     }
-
-    .sidebar a {
-        float: left;
+    .nav-tabs{
+        width:100%;
     }
-
-    div.content {
-        margin-left: 0;
+    .tab-content .tab-pane select , .tab-content .tab-pane .date input{
+        width:100%;
     }
-}
-
-@media screen and (max-width: 400px) {
-    .sidebar a {
-        text-align: center;
-        float: none;
+    body{
+        overflow-x: hidden;
+    }
+    .row{
+        width:100%;
+    }
+    .tab-pane{
+        width:100%;
     }
 }
