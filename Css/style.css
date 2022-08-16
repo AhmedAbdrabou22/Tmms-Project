@@ -6,6 +6,7 @@
 
 body {
     background-color: #FAFAFA;
+    overflow-x: hidden;
 }
 .row {
     background-color: white;
@@ -184,6 +185,23 @@ div.content {
     color: #b85c38;
     padding: 3px;
 }
+
+/* tab content */
+.tab-content .tab-pane select , .tab-content .tab-pane .date input{
+    padding:10px;
+    background-color:#FAFAFA;
+    border:2px solid #4f8259;
+    background-color: transparent;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    margin:8px;
+    width:100%;
+}
+
+/**Tab content  */
 
 /* Style bodyContent Section*/
 
