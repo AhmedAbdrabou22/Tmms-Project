@@ -206,31 +206,46 @@ div.content {
 table{
     width:100%;
 }
-table, tr, td {
-    border: 1px solid #040;
-    padding:15px;
+
+table tr ,td{
+    border: 1px solid #B8B5B5;
+    padding:50px;
+}
+table td a , table td small{
+    text-decoration: underline;
+    color:#b85c38;
+}
+table td small{
+    text-decoration: none;
+}
+table td img{
+    width:50px;
 }
 
-table td a{
-    text-decoration: underline;
-    color: #b85c38;
-}
-table td span:first-child{
-    color: #b85c38;
+table td span{
+    color:#3D7248;
 }
 .historyCollec{
-    padding:10px;
-    /* display: flex;
-    justify-content: space-between;
-    align-items: center; */
-}
-.historyCollec div{
-    margin: 10px;
-    background-color: #EBEBEB;
-    width:35px;
-    height: 35px;
-    padding:3px;
     text-align: center;
+}
+.generalTender{
+    background-color: #B8B5B5;
+    color:#4f8259;
+    padding:10px;
+    border-radius: 10px;
+    width:50%;  
+    text-align: center;
+    margin:10px auto;
+}
+.date {
+    text-align: center;
+}
+.date span{
+    background-color: #EBEBEB;
+    padding:8px;
+    display: inline-block;
+    width:50px;
+    border-radius: 10px;
 }
 /* Style bodyContent Section*/
 
