@@ -188,7 +188,7 @@ div.content {
 
 /* tab content */
 
-.tab-content .tab-pane select , .tab-content .tab-pane .date input{
+.tab-content .tab-pane select , .tab-content .tab-pane .date input {
     padding:10px;
     background-color:#FAFAFA;
     border:2px solid #4f8259;
@@ -201,15 +201,27 @@ div.content {
     margin:8px;
     width:100%;
 }
-
+#can , #sea{
+    padding:10px;
+    background-color:#FAFAFA;
+    border:2px solid #4f8259;
+    background-color: transparent;
+    border-radius: 10px;
+    width:100%;
+}
+#sea{
+    background-color: #4f8259;
+}
 /**Tab content  */
 table{
     width:100%;
+    border: 1px solid #B8B5B5;
+    padding: 5px;
 }
 
 table tr ,td{
     border: 1px solid #B8B5B5;
-    padding:50px;
+    padding:5px;
 }
 table td a , table td small{
     text-decoration: underline;
@@ -224,6 +236,23 @@ table td img{
 
 table td span{
     color:#3D7248;
+}
+table td i{
+    font-size:25px;
+}
+.hammer{
+    width:50%;
+    margin: auto;
+    text-align: center
+}
+.hammer i{
+    color: #4f8259;
+}
+.hammer p{
+    color: #b85c38;
+}
+.hammer p span{
+    color: black;
 }
 .historyCollec{
     text-align: center;
@@ -287,5 +316,22 @@ table td span{
     }
     .tab-pane{
         width:100%;
+    }
+    .right{
+        width:110%;
+        overflow-x: auto;
+    }
+    table{
+        font-size: 12px;
+        text-align: center;
+    }
+    table td i{
+        font-size: 13px;
+    }
+    table td p{
+        width:100%;
+    }
+    .a , .b{
+        flex-direction: column;
     }
 }
