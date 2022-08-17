@@ -207,7 +207,7 @@ table{
     width:100%;
 }
 table, tr, td {
-    border: 2px solid #040;
+    border: 1px solid #040;
     padding:15px;
 }
 
